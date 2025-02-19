@@ -1,6 +1,7 @@
 console.log("Script is running");
 
 // Get the display element
+//const display = document.querySelector('.my-input');
 const display = document.querySelector('input[name="display"]');
 console.log("Display element:", display); // Check if we found the display
 
@@ -56,6 +57,5 @@ function setupCalculator() {
 }
 
 // Wait for the page to load, then set up the calculator
-document.addEventListener("DOMContentLoaded", setupCalculator);
-
-console.log("Added DOMContentLoaded listener");
+setupCalculator();
+console.log("script.js is loaded!");
